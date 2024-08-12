@@ -14,12 +14,18 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.13.3(typescript@5.5.4))(tailwindcss@3.4.9)
+      '@fontsource-variable/raleway':
+        specifier: ^5.0.20
+        version: 5.0.20
       '@midudev/tailwind-animations':
         specifier: ^0.0.7
         version: 0.0.7(tailwindcss@3.4.9)
       astro:
         specifier: ^4.13.3
         version: 4.13.3(typescript@5.5.4)
+      open-props:
+        specifier: ^1.7.5
+        version: 1.7.5
       tailwindcss:
         specifier: ^3.4.9
         version: 3.4.9
@@ -330,6 +336,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/raleway@5.0.20':
+    resolution: {integrity: sha512-KXXL81z1GexSxIGD78DnuYGPixRGrUTP0F5uzLIB+0ugPYEv1UW+s8d/NtsCAjYR1pfuN0gXNBAzwwFxMqLZbA==}
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -1434,6 +1443,9 @@ packages:
     resolution: {integrity: sha512-1FlR+gjXK7X+AsAHso35MnyN5KqGwJRi/31ft6x0M194ht7S+rWAvd7PHss9xSKMzE0asv1pyIHaJYq+BbacAQ==}
     engines: {node: '>=12'}
 
+  open-props@1.7.5:
+    resolution: {integrity: sha512-DajjLQDJgIa0i+QdB2q5M8lNLo2ICk+DbDh4TsqNsT1tAO8Zm8F7dndSkLMQkobT98lbvDMMpJWO8NT0ibjrjA==}
+
   ora@8.0.1:
     resolution: {integrity: sha512-ANIvzobt1rls2BDny5fWZ3ZVKyD6nscLvfFRpQgfWsythlcsVUC9kL0zq6j2Z5z9wwp1kd7wpsD/T9qNPVLCaQ==}
     engines: {node: '>=18'}
@@ -2371,6 +2383,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fontsource-variable/raleway@5.0.20': {}
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:
@@ -3677,6 +3691,8 @@ snapshots:
   onetime@6.0.0:
     dependencies:
       mimic-fn: 4.0.0
+
+  open-props@1.7.5: {}
 
   ora@8.0.1:
     dependencies:
