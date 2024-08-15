@@ -1,5 +1,4 @@
-import Animations from "open-props/src/animations";
-import * as Easing from "open-props/src/easing";
+import animations from "@midudev/tailwind-animations";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -16,19 +15,11 @@ export default {
             transform: "translateY(100%)",
           },
         },
-        "slide-up": {
-          from: {
-            transform: "translateY(20px)",
-          },
-          to: {
-            transform: "translateY(0px)",
-          },
-        },
       },
       animation: {
-        "slide-down": "slide-down 5s forwards",
-        "slide-up": `slide-up .5s ${Easing["--ease-1"]}`,
+        "slide-down": "slide-down 1s forwards",
       },
     },
   },
+  plugins: [animations],
 };

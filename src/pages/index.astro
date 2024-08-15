@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
+import "../styles/index.css"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,7 +35,7 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1 class="textRed">Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -62,16 +64,12 @@ import Card from '../components/Card.astro';
 		</ul>
 	</main>
 	<div class="h-full w-full flex flex-nowrap absolute top-0 overflow-hidden">
-		<div class="bg-black h-full grow" style="--element-index: 1" />
-		<div class="bg-black h-full grow [animation-delay:.1s]" style="--element-index: 2" />
-		<div class="bg-black h-full grow [animation-delay:.2s]" style="--element-index: 3" />
-		<div class="bg-black h-full grow [animation-delay:.3s]" style="--element-index: 4" />
-		<!-- <div class="bg-black h-full grow animate-slide-down" style="--element-index: 1" />
-		<div class="bg-black h-full grow animate-slide-down [animation-delay:.1s]" style="--element-index: 2" />
-		<div class="bg-black h-full grow animate-slide-down [animation-delay:.2s]" style="--element-index: 3" />
-		<div class="bg-black h-full grow animate-slide-down [animation-delay:.3s]" style="--element-index: 4" /> -->
-		<div class="absolute h-full w-full flex justify-center items-center text-white gap-2">
-			<span class="text-3xl font-thin animate-slide-up"> Developer,</span><span class="text-3xl font-thin animate-slide-up [animation-delay:.5s]"> Musician,</span><span class="text-3xl font-thin animate-slide-up [animation-delay:1s]">Dog-owner🐶.</span>
+		<div class="bg-black h-full grow animate-slide-down [animation-delay:1.5s]" style="--element-index: 1" />
+		<div class="bg-black h-full grow animate-slide-down [animation-delay:1.6s]" style="--element-index: 2" />
+		<div class="bg-black h-full grow animate-slide-down [animation-delay:1.7s]" style="--element-index: 3" />
+		<div class="bg-black h-full grow animate-slide-down [animation-delay:1.8s]" style="--element-index: 4" />
+		<div class="absolute h-full w-full flex justify-center items-center text-white gap-2 animate-fade-out [animation-duration:0.3s] [animation-delay:1.5s]">
+			<span class="text-3xl font-thin animate-blurred-fade-in [animation-duration:0.2s]"> Developer,</span><span class="text-3xl font-thin animate-blurred-fade-in [animation-duration:0.2s] [animation-delay:.5s]"> Musician,</span><span class="text-3xl font-thin animate-blurred-fade-in [animation-duration:0.2s] [animation-delay:1s]">Dog-owner🐶.</span>
 		</div>
 	</div>
 </Layout>

@@ -1,0 +1,16 @@
+@import "https://unpkg.com/open-props/src/animations.min.css";
+
+.textRed {
+  color: red;
+}
+
+.slide-fade {
+  animation: var(--animation-fade-out) forwards, var(--animation-slide-out-down);
+  animation-timing-function: var(--ease-elastic-in-out-3);
+  animation-duration: 1s;
+}
+
+.shake-in {
+  animation: var(--animation-shake-y), var(--animation-fade-in),
+    var(--animation-slide-in-left);
+}
