@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.2",
+    "@astrojs/check": "^0.9.3",
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource-variable/raleway": "^5.0.20",
+    "@fontsource-variable/quicksand": "^5.0.19",
     "@midudev/tailwind-animations": "^0.0.7",
-    "astro": "^4.13.3",
-    "open-props": "^1.7.5",
+    "astro": "^4.14.5",
+    "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^3.4.9",
     "typescript": "^5.5.4"
   }
