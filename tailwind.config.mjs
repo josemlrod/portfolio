@@ -4,6 +4,11 @@ import animations from "@midudev/tailwind-animations";
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    colors: {
+      primary: "rgb(var(--primaryColor) / <alpha-value>)",
+      white: "rgb(var(--white) / <alpha-value>)",
+      accent: "rgb(var(--accentColor) / <alpha-value>)",
+    },
     extend: {
       keyframes: {
         "slide-down": {
@@ -13,6 +18,7 @@ export default {
           },
           to: {
             transform: "translateY(100%)",
+            display: "none",
           },
         },
       },
