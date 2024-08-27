@@ -1,0 +1,15 @@
+html {
+  --color-primary: 20 21 24;
+  --background: 231 232 235;
+  --accent-color: 220 73 58;
+}
+
+html.dark {
+  --color-primary: 231 232 235;
+  --background: 20 21 24;
+  --accent-color: 220 73 58;
+}
+
+body {
+  font-family: "Quicksand Variable", sans-serif;
+}

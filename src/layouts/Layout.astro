@@ -1,19 +1,13 @@
 ---
 // Supports weights 300-700
 import "@fontsource-variable/quicksand";
-
-import Header from "../components/Header.astro";
+import "../styles/index.css";
 
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
-
-// css color variables
-const primaryColor = "8 9 12";
-const white = "243 244 247";
-const accentColor = "220 73 58";
 ---
 
 <!doctype html>
@@ -25,20 +19,7 @@ const accentColor = "220 73 58";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-background transition-colors duration-500">
     <slot />
   </body>
 </html>
-
-<style
-  is:global
-  define:vars={{
-    primaryColor,
-    white,
-    accentColor,
-  }}
->
-  body {
-    font-family: "Quicksand Variable", sans-serif;
-  }
-</style>
