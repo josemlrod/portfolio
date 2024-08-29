@@ -1,9 +1,18 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
+
+interface Props {
+  animate?: boolean;
+}
+
+const { animate } = Astro.props;
 ---
 
 <header
-  class="flex w-full justify-between items-center py-4 md:py-6 lg:py-8 animate-fade-in-down [animation-delay:2s]"
+  class:list={[
+    "flex w-full justify-between items-center py-4 md:py-6 lg:py-8",
+    animate ? "animate-fade-in-down [animation-delay:2s]" : "",
+  ]}
 >
   <a
     class="text-primary font-bold text-lg md:text-xl lg:text-3xl hover:underline"
@@ -11,7 +20,7 @@ import ThemeToggle from "./ThemeToggle.astro";
   >
   <ThemeToggle />
   <nav class="flex gap-4 md:gap-6 lg:gap-8">
-    <a class="text-primary text-base lg:text-lg hover:underline" href="/"
+    <a class="text-primary text-base lg:text-lg hover:underline" href="/contact"
       >contact</a
     >
   </nav>
