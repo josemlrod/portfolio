@@ -15,7 +15,7 @@ import Header from "../components/Header.astro";
         <form
           action="mailto:joserodriguezcabr@gmail.com"
           class="flex flex-col gap-4 mt-4 min-w-[300px] md:min-w-[500px] items-center"
-          method="post"
+          id="contact_form"
         >
           <input
             autofocus
@@ -37,7 +37,7 @@ import Header from "../components/Header.astro";
           <textarea
             class="min-w-[300px] max-w-[300px] md:min-w-[500px] md:max-w-[400px] min-h-[100px] max-h-[300px] rounded-md px-3 py-2 [field-sizing:content] focus:outline-none focus:outline-2 focus:outline-offset-2 focus:outline-accent"
             required
-            name="message"
+            name="body"
             placeholder="Message"></textarea>
           <div class="w-full flex justify-end">
             <button
