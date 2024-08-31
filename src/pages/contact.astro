@@ -13,30 +13,35 @@ import Header from "../components/Header.astro";
         </p>
 
         <form
+          action="/sendMessage.json"
           class="flex flex-col gap-4 mt-4 min-w-[300px] md:min-w-[500px] items-center"
+          method="post"
         >
           <input
             autofocus
-            class="min-w-[300px] max-w-[300px] md:min-w-[500px] md:max-w-[400px] rounded-md px-2"
+            class="min-w-[300px] max-w-[300px] md:min-w-[500px] md:max-w-[400px] rounded-md px-3 py-2 focus:outline-none focus:outline-2 focus:outline-offset-2 focus:outline-accent"
             required
             minlength="3"
+            name="name"
             placeholder="Name"
             type="text"
           />
           <input
-            class="min-w-[300px] max-w-[300px] md:min-w-[500px] md:max-w-[400px] rounded-md px-2"
+            class="min-w-[300px] max-w-[300px] md:min-w-[500px] md:max-w-[400px] rounded-md px-3 py-2 focus:outline-none focus:outline-2 focus:outline-offset-2 focus:outline-accent"
             required
             minlength="3"
+            name="subject"
             placeholder="Subject"
             type="text"
           />
           <textarea
-            class="min-w-[300px] max-w-[300px] md:min-w-[500px] md:max-w-[400px] min-h-[100px] max-h-[300px] rounded-md px-2 [field-sizing:content]"
+            class="min-w-[300px] max-w-[300px] md:min-w-[500px] md:max-w-[400px] min-h-[100px] max-h-[300px] rounded-md px-3 py-2 [field-sizing:content] focus:outline-none focus:outline-2 focus:outline-offset-2 focus:outline-accent"
             required
+            name="message"
             placeholder="Message"></textarea>
           <div class="w-full flex justify-end">
             <button
-              class="text-background bg-primary py-2 px-4 rounded-md hover:bg-primary/85 hover:scale-110 transition-all"
+              class="text-background bg-primary py-2 px-4 rounded-md hover:bg-primary/85 hover:scale-110 transition-all focus:outline-none focus:outline-2 focus:outline-offset-2 focus:outline-accent"
               >Send</button
             >
           </div>
